@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'brechó';
+    src: url("../fonts/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'principal';
+    src: url("../fonts/Nanum_Brush_Script/NanumBrushScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'brechó2';
+    src: url("../fonts/Sofia/Sofia-Regular.ttf") format("truetype");
+}
+
+:root{
+    --fonte1: 'brechó', cursive;
+    --fonte2: 'principal', cursive;
+    --fonte3: 'brechó2', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background: black url("../imgs/pexels-eberhard-grossgasteiger-2310713.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    background-image: url("../imgs/pexels-eberhard-grossgasteiger-2088205.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+header > h1{
+    font-family: var(--fonte3);
+    padding: 20px;
+    font-size: 3em;
+}
+
+header p{
+    padding-bottom: 20px;
+}
+nav{
+    padding-top: 15px;
+    padding: 20px 0;
+}
+
+nav ul{
+    text-align: left;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+nav a:hover{
+    background-color: white;
+    color: dodgerblue;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+main{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.49);
+}
+
+article{
+    text-align: center;
+}
+
+article p{
+    text-align: justify;
+}
+article figure{
+    display: inline-block;
+    margin: 2px;
+}
+
+article img{
+    width: 370px;
+}
+
+article a{
+    text-decoration: none;
+    color: darksalmon;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+section{
+    padding: 20px 0;
+    max-width: 100%; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section p{
+    text-align: justify;
+}
+
+section h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: var(--fonte3);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 1px black;
+}
+
+section img{
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+section figure{
+    display: inline-block;
+}
+
+.img-efeito img:hover{
+    transform: scale(1.2) rotate(1deg) translate(2px, 2px);
+    transition: 0.5s;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.648);
+}
+
+.img-efeito a{
+    text-decoration: none;
+    color: darksalmon;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+section .parallax{
+    position: relative;
+    top: 20px;
+    background-image: url("../imgs/Banner-crianca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset -2px 2px 10px rgba(0, 0, 0, 0.607);
+    max-width: 100%;
+    height: 400px;
+    max-height: fit-content;
+    border-radius: 2px;
+}
+
+.parallax p{
+    position: absolute;
+    font-family: var(--fonte3);
+    text-align: center;
+    font-size: 3.2vw;
+    background-color: rgba(46, 46, 46, 0.37);
+    border-radius: 10px;
+    max-height: 50%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    overflow-y: auto;
+}
+
+footer{
+    width: 100%;
+    color: white;
+    background-image: url("../imgs/pexels-eberhard-grossgasteiger-2088205.jpg");
+    text-align: center;
+    clear: both;
+}
+
+footer p{
+    padding: 10px;
+}
+
